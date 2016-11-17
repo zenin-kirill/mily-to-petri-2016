@@ -8,7 +8,91 @@
 <body>
 <h1 align="center">Преобразование автомата Мили в сеть Петри</h1>
 <br/>
-
+<div class="container-fluid">
+	<div class="col-lg-6">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 align="center">Входные данные</h3>
+			</div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<label for="input.q">Множество состояний автомата Q:</label>
+						<input type="text" class="form-control" id="input.q" placeholder="q0,q1">
+					</div>
+					<br/>
+					<div class="row">
+						<label for="input.x">Множество входных символов X:</label>
+						<input type="text" class="form-control" id="input.x" placeholder="0,1,R">
+					</div>
+					<br/>
+					<div class="row">
+						<label for="input.y">Множество выходных символов Y:</label>
+						<input type="text" class="form-control" id="input.y" placeholder="0,1">
+					</div>
+					<br/>
+					<div class="row">
+						<label for="input.b">Множество функций переходов &beta;:</label>
+						<input type="text" class="form-control" id="input.b" placeholder="f(q0,0)=q0, f(q0,1)=q1">
+					</div>
+					<br/>
+					<div class="row">
+						<label for="input.l">Множество функций выходов &lambda;:</label>
+						<input type="text" class="form-control" id="input.l" placeholder="f(q0,0)=1, f(q0,1)=0">
+					</div>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-5">
+						<div class="container-fluid">
+							<button type="button" class="btn btn-primary btn-block">Выполнить</button>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="container-fluid">
+							<button type="button" class="btn btn-default btn-block">Очистить</button>
+						</div>
+					</div>
+					<div class="col-lg-1"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 align="center">Выходные данные</h3>
+			</div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<label for="output.p">Множество позиций сети Петри P:</label>
+						<p class="form-control" id="output.p">
+					</div>
+					<br/>
+					<div class="row">
+						<label for="output.t">Множество позиций сети Петри T:</label>
+						<p class="form-control" id="output.t">
+					</div>
+					<br/>
+					<div class="row">
+						<label for="output.i">Множество позиций сети Петри I:</label>
+						<p class="form-control" id="output.i">
+					</div>
+					<br/>
+					<div class="row">
+						<label for="output.o">Множество позиций сети Петри O:</label>
+						<p class="form-control" id="output.o">
+					</div>
+					<br/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="./main.js"></script>
 <script src="./jquery/jquery.min.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
